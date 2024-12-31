@@ -1,0 +1,12 @@
+sudo apt update
+sudo apt install g++
+sudo apt install python-pip
+sudo apt install telebot pymongo aiohttp
+sudo apt install ufw
+sudo ufw enable
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow 10000:30000/udp
+sudo ufw allow 10000:30000/tcp
+sudo ufw status

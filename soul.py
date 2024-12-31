@@ -189,8 +189,8 @@ def process_attack_command(message):
             bot.send_message(message.chat.id, f"*🔒 Port {target_port} is blocked.*\n"  # Blocked port message
                                                "*Please select a different port to proceed.*", parse_mode='Markdown')  # Different port message
             return
-        if duration >= 600:
-            bot.send_message(message.chat.id, "*⏳ Maximum duration is 599 seconds.*\n"  # Duration limit message
+        if duration >= 80:
+            bot.send_message(message.chat.id, "*⏳ Maximum duration is 80 seconds.*\n"  # Duration limit message
                                                "*Please shorten the duration and try again!*", parse_mode='Markdown')  # Shorten duration message
             return  
 
